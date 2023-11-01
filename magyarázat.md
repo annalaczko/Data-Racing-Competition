@@ -4,25 +4,25 @@
 
 **CONTRACT_BANK_ID:** A bank azonosítója, amely a szerződést kezeli.
 
-**CONTRACT_CREDIT_INTERMEDIARY:** Hitelközvetítő szám.
+**CONTRACT_CREDIT_INTERMEDIARY:** Hitelközvetítő szám. kategória?
 
-**CONTRACT_CREDIT_LOSS:** A szerződés vesztesége.
+**CONTRACT_CREDIT_LOSS:** A szerződés vesztesége. -- elszámolt, bedőlt. fennálló tartozás mértéke.
 
 **CONTRACT_CURRENCY:** A szerződés valuta típusa.
 
 **CONTRACT_DATE_OF_LOAN_AGREEMENT:** A kölcsönszerződés dátuma.
 
-**CONTRACT_DEPT_SERVICE_TO_INCOME:** A tartozás szolgáltatása a jövedelemhez képest.
+**CONTRACT_DEPT_SERVICE_TO_INCOME:** A tartozás szolgáltatása a jövedelemhez képest. havi törlesztő/teljes fizu
 
 **CONTRACT_FREQUENCY_TYPE:** A szerződés gyakoriság típusa.
 
-**CONTRACT_INCOME:** A szerződés jövedelme.
+**CONTRACT_INCOME:** A szerződés jövedelme. --> szerződő jövedelme
 
-**CONTRACT_INSTALMENT_AMOUNT:** A havi részlet összege.
+**CONTRACT_INSTALMENT_AMOUNT:** A havi részlet összege. --> tőke?
 
-**CONTRACT_INSTALMENT_AMOUNT_2:** A második havi részlet összege.
+**CONTRACT_INSTALMENT_AMOUNT_2:** A második havi részlet összege. --> ez valszleg nem az, a legtöbb adat csak ebben van!!! -- kamatrész?
 
-**CONTRACT_INTEREST_PERIOD:** A kamatperiódus.
+**CONTRACT_INTEREST_PERIOD:** A kamatperiódus. ugyanaz mint frequency type?
 
 **CONTRACT_INTEREST_RATE:** A kamatláb.
 
@@ -32,21 +32,21 @@
 
 **CONTRACT_LOAN_CONTRACT_TYPE:** A kölcsön szerződés típusa.
 
-**CONTRACT_LOAN_TO_VALUE_RATIO:** A kölcsön-érték arány.
+**CONTRACT_LOAN_TO_VALUE_RATIO:** A kölcsön-érték arány.  hitelfedezetének az aránya a hitelhez képest
 
 **CONTRACT_LOAN_TYPE:** A kölcsön típusa.
 
-**CONTRACT_MARKET_VALUE:** A piaci érték.
+**CONTRACT_MARKET_VALUE:** A piaci érték. fedezet piaci értéke
 
 **CONTRACT_MATURITY_DATE:** A lejárat dátuma.
 
-**CONTRACT_MORTGAGE_LENDING_VALUE:** A jelzáloghitelezés értéke.
+**CONTRACT_MORTGAGE_LENDING_VALUE:** A jelzáloghitelezés értéke. ?
 
-**CONTRACT_MORTGAGE_TYPE:** A jelzálog típusa.
+**CONTRACT_MORTGAGE_TYPE:** A jelzálog típusa. ?
 
 **CONTRACT_REFINANCED:** Refinanszírozott szerződés (igen/nem).
 
-**CONTRACT_RISK_WEIGHTED_ASSETS:** A kockázat súlyozott eszközei.
+**CONTRACT_RISK_WEIGHTED_ASSETS:** A kockázat súlyozott eszközei. jelzálog tárgy kockázata
 
 **CONTRACT_TYPE_OF_INTEREST_REPAYMENT:** A kamat visszafizetés típusa.
 
