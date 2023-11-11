@@ -6,40 +6,40 @@ A feladat az, hogy a megadott hitelfelvevők hitele mekkora eséllyel (valószí
 - open-end loan - folyószámla hitel, hitelkártya - a hitelezett összeg újra felvehető
 - credit card contracts - hitelkártya szerződés
 
-| Adatmező                  | Leírás                                           | Tippek Nan eltávolításra                                          |
-|--------------------------|--------------------------------------------------| ----------------------------------------------------------------- |
-| CONTRACT_ID              | Szerződés azonosítója                             | 
-| BORROWER_ID              | Hitelező azonosítója                              |
-| CONTRACT_BANK_ID         | A bank azonosítója, amely a szerződést kezeli     | 
-| CONTRACT_CREDIT_INTERMEDIARY | Hitelközvetítő szám kategória?                | 0 érték a Nan helyett
-| CONTRACT_CREDIT_LOSS     | A szerződés vesztesége - elszámolt, bedőlt, fennálló tartozás mértéke | megnézni, hogy a Nan értékek 0 értékek-e --> vagyis hogy a szerződés nem veszteséges
-| CONTRACT_CURRENCY         | A szerződés valuta típusa                        |
-| CONTRACT_DATE_OF_LOAN_AGREEMENT | A kölcsönszerződés dátuma                 |
-| CONTRACT_DEPT_SERVICE_TO_INCOME | A tartozás szolgáltatása a jövedelemhez képest -  | LOAN_AMOUNT / INCOME ...?
-| CONTRACT_FREQUENCY_TYPE   | A szerződés gyakoriság típusa                    | 
-| CONTRACT_INCOME          | A szerződés jövedelme - mekkora bevétel éri a bankot a szerződésből| 
-| CONTRACT_INSTALMENT_AMOUNT | A havi részlet összege - tőke?               |
-| CONTRACT_INSTALMENT_AMOUNT_2 | A második havi részlet összege - kamatrész? |
-| CONTRACT_INTEREST_PERIOD | A kamatperiódus - ugyanaz mint frequency type? |
-| CONTRACT_INTEREST_RATE   | A kamatláb                                      |
-| CONTRACT_LGD             | A veszteség mértéke (Loss Given Default)         |
-| CONTRACT_LOAN_AMOUNT     | A kölcsön összege                               |
-| CONTRACT_LOAN_CONTRACT_TYPE | A kölcsön szerződés típusa                  |
-| CONTRACT_LOAN_TO_VALUE_RATIO | A kölcsön-érték arány - hitelfedezetének az aránya a hitelhez képest |
-| CONTRACT_LOAN_TYPE       | A kölcsön típusa                                |
-| CONTRACT_MARKET_VALUE    | A piaci érték - fedezet piaci értéke           |
-| CONTRACT_MATURITY_DATE   | A lejárat dátuma                                |
-| CONTRACT_MORTGAGE_LENDING_VALUE | A jelzáloghitelezés értéke                |
-| CONTRACT_MORTGAGE_TYPE   | A jelzálog típusa                               |
-| CONTRACT_REFINANCED      | Refinanszírozott szerződés (igen/nem)           |
-| CONTRACT_RISK_WEIGHTED_ASSETS | A kockázat súlyozott eszközei - jelzálog tárgy kockázata |
-| CONTRACT_TYPE_OF_INTEREST_REPAYMENT | A kamat visszafizetés típusa             |
-| BORROWER_BIRTH_YEAR      | Hitelező születési éve                           |
-| BORROWER_CITIZENSHIP     | Hitelező állampolgársága                       |
-| BORROWER_COUNTRY         | Hitelező országa                                |
-| BORROWER_COUNTY          | Hitelező megyéje                                |
-| BORROWER_TYPE_OF_CUSTOMER | Hitelező ügyfél típusa                        |
-| BORROWER_TYPE_OF_SETTLEMENT | Hitelező elhelyezkedés típusa                |
-| TARGET_EVENT             | Cél esemény                                      |
-| TARGET_EVENT_DAY         | Cél esemény napja                               |
 
+| Adatmező                  | Leírás                                           | Tippek Nan eltávolításra                                          | Hiányzó értékek száma |
+|--------------------------|--------------------------------------------------| ----------------------------------------------------------------- | --------------------- |
+| CONTRACT_ID              | Szerződés azonosítója                             |                                                            | 0                     |
+| BORROWER_ID              | Hitelező azonosítója                              |  | 0                     |
+| CONTRACT_BANK_ID         | A bank azonosítója, amely a szerződést kezeli     |                                                        | 0                     |
+| CONTRACT_CREDIT_INTERMEDIARY | Hitelközvetítő szám kategória?                | 0 érték a Nan helyett | 59,422                |
+| CONTRACT_CREDIT_LOSS     | A szerződés vesztesége - elszámolt, bedőlt, fennálló tartozás mértéke | megnézni, hogy a Nan értékek 0 értékek-e --> vagyis hogy a szerződés nem veszteséges | 36,154 |
+| CONTRACT_CURRENCY         | A szerződés valuta típusa                        |                                                     | 0                     |
+| CONTRACT_DATE_OF_LOAN_AGREEMENT | A kölcsönszerződés dátuma                 |                                                | 0                     |
+| CONTRACT_DEPT_SERVICE_TO_INCOME | A tartozás szolgáltatása a jövedelemhez képest -  | LOAN_AMOUNT / INCOME ...? | 201,480 |
+| CONTRACT_FREQUENCY_TYPE   | A szerződés gyakoriság típusa                    | | 0                     |
+| CONTRACT_INCOME          | A szerződés jövedelme - mekkora bevétel éri a bankot a szerződésből| | 198,022               |
+| CONTRACT_INSTALMENT_AMOUNT | A havi részlet összege - tőke? | | 1,314,531             |
+| CONTRACT_INSTALMENT_AMOUNT_2 | A második havi részlet összege - kamatrész? | | 42,438                |
+| CONTRACT_INTEREST_PERIOD | A kamatperiódus - ugyanaz mint frequency type? | | 371,312               |
+| CONTRACT_INTEREST_RATE   | A kamatláb                                      | | 35,370                |
+| CONTRACT_LGD             | A veszteség mértéke (Loss Given Default)         | | 33,722                |
+| CONTRACT_LOAN_AMOUNT     | A kölcsön összege                               | | 0                     |
+| CONTRACT_LOAN_CONTRACT_TYPE | A kölcsön szerződés típusa                  | | 0                     |
+| CONTRACT_LOAN_TO_VALUE_RATIO | A kölcsön-érték arány - hitelfedezetének az aránya a hitelhez képest | | 1,176,530             |
+| CONTRACT_LOAN_TYPE       | A kölcsön típusa                                | | 0                     |
+| CONTRACT_MARKET_VALUE    | A piaci érték - fedezet piaci értéke           | | 1,074,843             |
+| CONTRACT_MATURITY_DATE   | A lejárat dátuma                                | | 0                     |
+| CONTRACT_MORTGAGE_LENDING_VALUE | A jelzáloghitelezés értéke                | | 1,064,936             |
+| CONTRACT_MORTGAGE_TYPE   | A jelzálog típusa                               | | 1,064,936             |
+| CONTRACT_REFINANCED      | Refinanszírozott szerződés (igen/nem)           | | 59,422                |
+| CONTRACT_RISK_WEIGHTED_ASSETS | A kockázat súlyozott eszközei - jelzálog tárgy kockázata | | 33,722                |
+| CONTRACT_TYPE_OF_INTEREST_REPAYMENT | A kamat visszafizetés típusa             | | 232,962               |
+| BORROWER_BIRTH_YEAR      | Hitelező születési éve                           | | 42,867                |
+| BORROWER_CITIZENSHIP     | Hitelező állampolgársága                       | | 42,867                |
+| BORROWER_COUNTRY         | Hitelező országa                                | | 42,867                |
+| BORROWER_COUNTY          | Hitelező megyéje                                | | 96,677                |
+| BORROWER_TYPE_OF_CUSTOMER | Hitelező ügyfél típusa                        | | 0                     |
+| BORROWER_TYPE_OF_SETTLEMENT | Hitelező elhelyezkedés típusa                | | 528,624              |
+| TARGET_EVENT             | Cél esemény                                      | | 0                     |
+| TARGET_EVENT_DAY         | Cél esemény napja                               | | 1,548,364             |
