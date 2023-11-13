@@ -2,6 +2,8 @@
 data_submission_example.csv
 training_data.csv
 
+data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
